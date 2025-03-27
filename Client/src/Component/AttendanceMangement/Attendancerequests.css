@@ -1,0 +1,246 @@
+.admin-attendance-reqp-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin-left: 330px;
+  margin-top: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+}
+
+.heading-bg-req{
+  background: linear-gradient(135deg, #0073e6, #0056b3);
+  color: #fff;
+  margin-top: -31px;
+  width: 106%;
+  font-size: 18px;
+  margin-left: -30px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+}
+
+.admin-attendance-reqp-table-container {
+  width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-top: 15px;
+}
+
+.admin-attendance-reqp-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-attendance-reqp-table th, .admin-attendance-reqp-table td {
+  padding: 12px;
+  text-align: left; 
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-attendance-reqp-table th:first-child, .admin-attendance-reqp-table td:first-child {
+  width: 50px; 
+}
+
+.admin-attendance-reqp-checkbox {
+  transform: scale(1.2);
+  cursor: pointer; 
+}
+
+.admin-attendance-reqp-table th {
+  background-color: #0056b3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.admin-attendance-reqp-table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.admin-attendance-reqp-status {
+  text-align: center;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
+  color: red !important;
+}
+
+.admin-attendance-reqp-status.active {
+  background-color: #ffffff;
+  color: #065f46;
+  font-size: bold;
+}
+
+.admin-attendance-reqp-status.on-leave {
+  background-color: #ffffff;
+  color: #92400e;
+}
+
+.admin-attendance-reqp-status.remote {
+  background-color: #ffffff;
+  color: #6b21a8;
+}
+
+.admin-attendance-reqp-reject, .admin-attendance-reqp-accept {
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: black !important;
+  border: none !important;
+  margin-right: 16px;
+}
+
+.admin-attendance-reqp-reject {
+  background-color: #dc2626;
+  color: white !important;
+  border: 1px solid #dc2626;
+}
+
+.admin-attendance-reqp-reject:hover, .admin-attendance-reqp-reject.active {
+  background-color: #dc2626;
+  color: white !important;
+}
+
+.admin-attendance-reqp-accept {
+  background-color:#16a34a;
+  color: white !important;
+  border: 1px solid #16a34a;
+}
+
+.admin-attendance-reqp-accept:hover, .admin-attendance-reqp-accept.active {
+  background-color: #16a34a;
+  color: white !important;
+}
+
+.admin-attendance-reqp-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f3f4f6;
+  padding: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.admin-attendance-reqp-popup-content {
+  text-align: center;
+  font-weight: 700;
+}
+
+.admin-attendance-reqp-action-button {
+  padding: 8px 12px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  background-color: #f9f9f9;
+  color: #333; 
+  outline: none; 
+  cursor: pointer; 
+}
+
+.admin-attendance-reqp-action-button:hover {
+  border-color: #999;
+}
+
+.admin-attendance-reqp-action-button-req{
+  border: none;
+  background-color: transparent;
+}
+
+.admin-attendance-reqp-date-input {
+  padding: 8px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  background-color: #f9f9f9; 
+  color: #333;
+  outline: none;
+  width: 200px; 
+}
+
+.admin-attendance-reqp-date-input:focus {
+  border-color: #66afe9; 
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.admin-attendance-reqp-date-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
+  cursor: pointer; 
+}
+
+.admin-attendance-reqp-date-input:hover {
+  border-color: #999; 
+}
+ 
+.admin-attendance-reqp-dropdown-request {
+  padding: 8px 12px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  background-color: #f9f9f9; 
+  color: #333;
+  outline: none; 
+  appearance: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  cursor: pointer; 
+  width: 150px; 
+
+}
+
+.admin-attendance-reqp-dropdown-request:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); 
+}
+
+.admin-attendance-reqp-dropdown-request{
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');  
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px; 
+}
+
+.admin-attendance-reqp-dropdown-request option {
+  padding: 8px; 
+  background-color: #fff; 
+  color: #333;
+}
+
+.admin-attendance-reqp-dropdown-request:hover {
+  border-color: #999; 
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-section label {
+  font-weight: bold;
+}
+
+.filter-section select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+}

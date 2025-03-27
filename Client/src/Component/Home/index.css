@@ -1,0 +1,262 @@
+.home-container {
+  padding: 24px;
+  text-align: center;
+}
+
+.home-container-h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 5px 0px 0px 25%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-con {
+  padding: 20px;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 20px !important;
+  padding-bottom: 61px;
+  margin-left: 100px;
+  transition: 0.3s;
+}
+.m-l{
+  margin-left: 310px !important;
+  transition: 0.3s;
+  padding: 20px;
+  background-color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 20px !important;
+  padding-bottom: 61px;
+}
+
+.home-container-p {
+  font-size: 16px;
+  color: #000000;
+  text-align: end;
+  padding-right: 10px;
+  padding: 2px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+.span-p {
+  color: #333;
+  font-weight: 550;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  padding-right: 3px;
+}
+
+.con1 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.box {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  height: 140px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.box:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+.hr11 {
+  height: 105px;
+  border-radius: 10px;
+  border: 1.3px solid !important;
+  border-color: #000000;
+}
+
+.tl {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #162F57;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.ds {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 420;
+}
+
+.spp {
+  margin-left: 23%;
+}
+
+/* TimingDetails.css */
+.timing-details {
+  width: 600px;
+  height: 268px;
+  border: 1px solid black;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.timing-details:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+.timing-details-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timing-details-body {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.timing-details-divider {
+  width: 100%;
+  margin: 5px 0;
+  margin-top: 20px !important;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e6e6e6;
+  border-radius: 50px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(140deg, #0257ac, #02499b);
+  width: 50%;
+  border-radius: 50px;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
+.spp {
+  display: flex;
+  font-size: 14px;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.day {
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.highlighted {
+  color: #fff;
+  background-color: #005ec9;
+  border-radius: 50%;
+  height: 23px;
+  width: 23px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* Container styles */
+.container-attendance-detalis {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 268px;
+  padding: 20px;
+  overflow: hidden;
+  color: #000000;
+}
+
+.container-attendance-detalis:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.divider {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.sp1 {
+  margin-left: 50px;
+  color: #000000 !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400 !important;
+}

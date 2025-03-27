@@ -1,0 +1,123 @@
+/* General container styles */
+.attendancereq-container, 
+.attendancereq-container1 {
+  width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out;
+  margin-left: 110px;
+  margin-top: 110px;
+}
+.heading-bg-req{
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+}
+.attendancereq-container1 {
+  margin-left: 340px;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.attendancereq-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+.attendancereq-container h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #02499b;
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+.form-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Input & Textarea styles */
+.form-dropdown, 
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-dropdown:focus, 
+.form-textarea:focus {
+  border-color: #02499b;
+  transform: scale(1.02);
+}
+
+/* Textarea specific styles */
+.form-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Button Styles */
+.submit-btn {
+  width: 35%;
+  padding: 10px;
+  background: linear-gradient(135deg, #02499b, #0267d3);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+  display: block;
+  margin: 20px auto;
+}
+
+.submit-btn:hover {
+  background: #0257ac;
+  transform: translateY(-3px);
+}
+
+/* Error message styles */
+.error {
+  color: #f32121;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .attendancereq-container {
+    width: 75%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .attendancereq-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
