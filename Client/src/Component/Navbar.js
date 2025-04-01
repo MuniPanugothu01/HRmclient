@@ -132,8 +132,8 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
     "Settings",
     "Messages",
     "Notifications",
-    "Calendar",
-    "Home",
+    "Attendance Requests",
+    "Add Employee",
     "Logout",
   ]);
 
@@ -146,8 +146,8 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
     if (feature === "Logout") handleLogout();
     else if (feature === "Profile") handleProfile();
     else if (feature === "Dashboard") navigate("/dashboard");
-    else if (feature === "Home") navigate("/home");
-    else if (feature === "Calendar") navigate("/calendar");
+    else if (feature === "Add Employee") navigate("/home");
+    else if (feature === "Attendance Requests") navigate("/calendar");
   };
 
   if (token) {
@@ -242,7 +242,7 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
 
         <Nav className="d-flex align-items-center">
           <Nav.Link className="name">{username || "User"}</Nav.Link>
-          <Nav.Link as={Link} to="/calendar" className="nav-calendar">
+          <Nav.Link as={Link} to="/Attendance Requests" className="nav-calendar">
             <FaCalendar size={20} />
           </Nav.Link>
           {userRole === "Admin" ? (
