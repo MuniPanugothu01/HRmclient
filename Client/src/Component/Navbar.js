@@ -102,8 +102,8 @@
 // export default NavbarComponent;
 
 import React, { useEffect, useState } from "react";
-import { Navbar, Container, Nav, Dropdown } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Navbar, Container, Nav, Dropdown, NavItem } from "react-bootstrap";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import {
   FaBell,
@@ -131,10 +131,11 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
     "Profile",
     "Settings",
     "Messages",
-    "Add Event",
+    "Attendancerequests",
     "calendar",
     "home",
     "Logout",
+    "email",
   ]);
 
   const filteredFeatures = features.filter((feature) =>
@@ -145,10 +146,11 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
     setSearchTerm("");
     if (feature === "Logout") handleLogout();
     else if (feature === "Profile") handleProfile();
-    else if (feature === "Dashboard") navigate("/dashboard");
+    else if (feature === "Dashboard") navigate("../Dashboard/index.js");
     else if (feature === "home") navigate("../Home/index.js");
     else if (feature === "calendar") navigate("/calendar");
-    else if (faEraser === "Add Event") navigate("/Add Event");
+    else if (feature === "Attendancerequests") navigate("../AttendanceRequest/index.js");
+    else if(feature === 'email') Navigate('../Email/inboxindex.js')
   };
 
   if (token) {
