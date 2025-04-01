@@ -115,7 +115,7 @@ import {
   FaPowerOff,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserTie } from "@fortawesome/free-solid-svg-icons";
+import { faEraser, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { jwtDecode } from "jwt-decode";
 import "./Navbar.css";
 
@@ -131,9 +131,9 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
     "Profile",
     "Settings",
     "Messages",
-    "Notifications",
-    "Attendance Requests",
-    "Add Employee",
+    "Add Event",
+    "calendar",
+    "home",
     "Logout",
   ]);
 
@@ -146,8 +146,9 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
     if (feature === "Logout") handleLogout();
     else if (feature === "Profile") handleProfile();
     else if (feature === "Dashboard") navigate("/dashboard");
-    else if (feature === "Add Employee") navigate("/home");
-    else if (feature === "Attendance Requests") navigate("/calendar");
+    else if (feature === "home") navigate("../Home/index.js");
+    else if (feature === "calendar") navigate("/calendar");
+    else if (faEraser === "Add Event") navigate("/Add Event");
   };
 
   if (token) {
@@ -242,7 +243,11 @@ const NavbarComponent = ({ isSidebarExpanded, isFullWidth }) => {
 
         <Nav className="d-flex align-items-center">
           <Nav.Link className="name">{username || "User"}</Nav.Link>
-          <Nav.Link as={Link} to="/Attendance Requests" className="nav-calendar">
+          <Nav.Link
+            as={Link}
+            to="/Attendance Requests"
+            className="nav-calendar"
+          >
             <FaCalendar size={20} />
           </Nav.Link>
           {userRole === "Admin" ? (
